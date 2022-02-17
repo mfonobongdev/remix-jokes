@@ -28,8 +28,8 @@ export default function JokesIndexRoute(): JSX.Element {
   return (
     <div>
       <p>Here's a random joke:</p>
-      <p>{data.randomJoke.content}</p>
-      <Link to={data.randomJoke.id}>"{data.randomJoke.name}" Permalink</Link>
+      <p>{data?.randomJoke?.content}</p>
+      <Link to={data?.randomJoke?.id}>"{data?.randomJoke?.name}" Permalink</Link>
     </div>
   )
 }

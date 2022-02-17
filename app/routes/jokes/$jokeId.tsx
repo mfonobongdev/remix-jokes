@@ -59,8 +59,8 @@ export default function JokeRoute(): JSX.Element {
   return (
     <div>
       <p>Here's your hilarious joke:</p>
-      <p>{data.joke.content}</p>
-      <Link to='.'>{data.joke.name} Permalink</Link>
+      <p>{data?.joke?.content}</p>
+      <Link to='.'>{data?.joke?.name} Permalink</Link>
       <Form method='post'>
         <input type='hidden' name='_method' value='delete' />
         <button type='submit' className='button'>

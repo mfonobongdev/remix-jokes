@@ -63,7 +63,7 @@ export default function JokesRoute(): JSX.Element {
             <Link to='.'>Get a random joke</Link>
             <p>Here are a few more jokes to check out:</p>
             <ul>
-              {data?.jokeListItems.map((joke) => (
+              {data?.jokeListItems?.map((joke) => (
                 <li key={joke.id}>
                   <Link prefetch='intent' to={joke.id}>
                     {joke.name}

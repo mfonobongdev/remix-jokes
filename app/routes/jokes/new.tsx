@@ -78,7 +78,7 @@ export default function NewJokeRoute(): JSX.Element {
         <div>
           {actionData?.formError ? (
             <p className='form-validation-error' role='alert' id='name-error'>
-              {actionData.formError}
+              {actionData?.formError}
             </p>
           ) : null}
           <label>
@@ -94,7 +94,7 @@ export default function NewJokeRoute(): JSX.Element {
           </label>
           {actionData?.fieldErrors?.name ? (
             <p className='form-validation-error' role='alert' id='name-error'>
-              {actionData.fieldErrors.name}
+              {actionData?.fieldErrors?.name}
             </p>
           ) : null}
         </div>
@@ -113,7 +113,7 @@ export default function NewJokeRoute(): JSX.Element {
           </label>
           {actionData?.fieldErrors?.content ? (
             <p className='form-validation-error' role='alert' id='content-error'>
-              {actionData.fieldErrors.content}
+              {actionData?.fieldErrors?.content}
             </p>
           ) : null}
         </div>
